@@ -11,14 +11,15 @@
 
 <body>
     <header>
-        <h1 class="text-5xl text-center mt-16">Let's get <span class=" font-semibold text-purple-700 ">Dream's</span>
+        <h1 class="text-5xl text-center mt-8">Let's get <span class=" font-semibold text-purple-700 ">Dream's</span>
             Mooney!!!
         </h1>
     </header>
 
-    <main>
+    <main class="w-3/4 mx-auto">
+        <!-- Balance and Transaction -->
         <section class="mt-8">
-            <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto text-white">
+            <div class="grid grid-cols-3 gap-4  text-white">
                 <div class="bg-pink-500 p-8 rounded">
                     <h3 class="text-3xl">Deposit</h3>
                     <h4 class="text-4xl">$00</h4>
@@ -32,6 +33,37 @@
                     <h4 class="text-4xl">$1200</h4>
                 </div>
 
+
+            </div>
+        </section>
+        <!-- Deposit and Withdraw -->
+        <section class="mt-6">
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-red-300 p-8 rounded">
+                    <h3 class="text-2xl">Please Deposit</h3>
+                    <div>
+                        <input id="deposit-input" class="border block border-gray-600 rounded-md w-3/4 mb-4 px-2"
+                            type="text" placeholder="$ amount you want to Deposit">
+
+
+
+                        <button id="deposit-button"
+                            class="bg-red-500 hover:bg-red-700 px-4 rounded py-2 text-white font-medium">Deposit</button>
+                    </div>
+                </div>
+
+                <div class="bg-green-300 p-8 rounded">
+                    <h3 class="text-2xl">Please Withdraw</h3>
+                    <div>
+                        <input id="withdraw-input" class="border block border-gray-600 rounded-md w-3/4 mb-4 px-2"
+                            type="text" placeholder="$ amount you want to Withdraw">
+
+
+
+                        <button id="withdraw-button"
+                            class="bg-red-500 hover:bg-red-700 px-4 rounded py-2 text-white font-medium">Withdraw</button>
+                    </div>
+                </div>
 
             </div>
         </section>
